@@ -27,9 +27,11 @@ public class Position {
 	public String getTitle() {
 		return title;
 	}
-	
-	public void setEmployee(Optional<Employee> employee) {
+
+	public Position setEmployee(Optional<Employee> employee)
+	{
 		this.employee = employee;
+		return this;
 	}
 	
 	public Optional<Employee> getEmployee() {
